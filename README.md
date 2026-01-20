@@ -2,29 +2,29 @@
 
 A full-stack weather application with Auth0 authentication, featuring real-time weather data from OpenWeatherMap API with 5-minute caching.
 
-## ✅ Fixed Issues
+##  Fixed Issues
 
-### 1. **cities.json Format Fixed** ✅
+### 1. **cities.json Format Fixed** 
 - **Before**: Contained static temp/status data
 - **After**: Only contains city codes as required
 - **File**: `backend/backend/src/main/resources/cities.json`
 
-### 2. **Auth0 Backend Configuration** ✅
+### 2. **Auth0 Backend Configuration** 
 - **Added**: Auth0 properties in `application.properties`
 - **Configured**: JWT token validation
 - **Protected**: API endpoints requiring authentication
 
-### 3. **Enhanced Weather Data** ✅
+### 3. **Enhanced Weather Data** 
 - **Added**: Complete weather details (pressure, humidity, wind, visibility, sunrise/sunset)
 - **Updated**: WeatherResponse model with all required fields
 - **Fixed**: Frontend to display real API data instead of mock data
 
-### 4. **5-Minute Cache Implementation** ✅
+### 4. **5-Minute Cache Implementation** 
 - **Configured**: Caffeine cache with 5-minute expiration
 - **Applied**: Cache annotations on weather service methods
 - **Verified**: Cache configuration in application.properties
 
-## 🏗️ Architecture
+##  Architecture
 
 ### Backend (Spring Boot)
 - **Framework**: Spring Boot 3.x
@@ -38,7 +38,7 @@ A full-stack weather application with Auth0 authentication, featuring real-time 
 - **UI**: Responsive card-based layout
 - **State**: Real-time weather data updates
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Java 17+
@@ -111,9 +111,9 @@ spring.cache.caffeine.spec=maximumSize=1000,expireAfterWrite=5m
 >
 ```
 
-## 📊 Features
+##  Features
 
-### ✅ Implemented Features
+###  Implemented Features
 
 1. **Real-time Weather Data**
    - Temperature, humidity, pressure
@@ -138,7 +138,7 @@ spring.cache.caffeine.spec=maximumSize=1000,expireAfterWrite=5m
    - Clean, modern UI
    - Add/remove cities functionality
 
-### 🔒 Security Features
+###  Security Features
 
 - JWT token validation
 - CORS configuration
@@ -146,7 +146,7 @@ spring.cache.caffeine.spec=maximumSize=1000,expireAfterWrite=5m
 - Input validation
 - Error handling without sensitive data exposure
 
-## 🧪 Testing
+##  Testing
 
 ### Test User Credentials
 - **Email**: `careers@fidenz.com`
@@ -159,7 +159,7 @@ spring.cache.caffeine.spec=maximumSize=1000,expireAfterWrite=5m
 - `POST /weather/add` - Add city (authenticated)
 - `DELETE /weather/{cityId}` - Remove city (authenticated)
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 weather/
@@ -186,7 +186,7 @@ weather/
 └── AUTH0_SETUP.md
 ```
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -208,14 +208,14 @@ weather/
    - Check API rate limits
    - Validate city codes in cities.json
 
-## 📈 Performance
+##  Performance
 
 - **Cache Hit Rate**: ~95% (5-minute cache)
 - **API Response Time**: < 200ms (cached)
 - **UI Load Time**: < 2 seconds
 - **Memory Usage**: Optimized with Caffeine cache
 
-## 🔄 Updates & Maintenance
+##  Updates & Maintenance
 
 ### Regular Tasks
 - Monitor Auth0 logs for security issues
@@ -229,7 +229,7 @@ weather/
 - Monitor API rate limits
 - Implement circuit breakers for external APIs
 
-## 📞 Support
+##  Support
 
 For technical issues:
 - Check Auth0 documentation
@@ -238,5 +238,7 @@ For technical issues:
 - Test with provided credentials
 
 ---
+<img width="1917" height="908" alt="Screenshot 2026-01-20 155256" src="https://github.com/user-attachments/assets/ecb9966e-230e-4adc-921f-823a45d867c2" />
+<img width="1911" height="921" alt="Screenshot 2026-01-20 155318" src="https://github.com/user-attachments/assets/719dfc0c-19da-48d3-95e2-8b38f00c33e3" />
+<img width="1911" height="922" alt="Screenshot 2026-01-20 155332" src="https://github.com/user-attachments/assets/5448aff4-5ee9-4fab-af7c-0f2252ce41eb" />
 
-**Status**: ✅ All issues fixed and ready for production deployment 
